@@ -9,7 +9,8 @@ export default {
         'home-bg': "url('./src/assets/HomeBackGround.jpg')",
       },
       colors:{
-        'brand-dark': '#01003D',
+        'brand-blue': '#02357B',
+        'brand-light': '#E9FFF9',
       }
     },
   },

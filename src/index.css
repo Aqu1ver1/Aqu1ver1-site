@@ -16,8 +16,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%; /* Укажите путь к вашей картинке */
-  background-image: url('./assets/HomeBackGround.jpg');
-  background-size: cover; /* Показывает всю картинку */
+  background-image: url('./assets/BgHomeFullHD.png');
+
+  @media screen and (max-width: 1540px) {
+    background-image: url('./assets/BgHomeLaptop.png');
+  }
+  background-size: contain; /* Показывает всю картинку */
   background-repeat: no-repeat; /* Убирает повторение */
   /*background-position: center; !* Центрирует изображение *!*/
 }
