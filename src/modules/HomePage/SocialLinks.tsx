@@ -1,4 +1,4 @@
-import React,{FC} from 'react';
+import {FC} from 'react';
 import GitHubIcon from "../../assets/Social_Icons/social_github_icon.png";
 import TwitterIcon from "../../assets/Social_Icons/x_twitter_icon.png";
 import LinkedInIcon from "../../assets/Social_Icons/app_linkedin_logo_media_popular_icon.png";
