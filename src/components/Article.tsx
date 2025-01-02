@@ -3,11 +3,12 @@ import {FC, ReactNode} from 'react';
 type Props = {
     children: string | ReactNode;
     color: string;
+    size?: string;
 }
 
-const Article:FC<Props> = ({children, color}) => {
+const Article:FC<Props> = ({children, color, size}) => {
     return (
-        <article className="text-2xl" >
+        <article className={size ? `${size}` : "text-2xl"}>
             <p className={"text-brand-" + `${color}`}>
                 {children}
             </p>

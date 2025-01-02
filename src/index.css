@@ -10,6 +10,9 @@ body {
   min-height: 100vh;
 }
 
+#root {
+  padding: 48px 48px;
+}
 .background {
   position: fixed;
   top: 0;
@@ -21,7 +24,7 @@ body {
   @media screen and (max-width: 1540px) {
     background-image: url('./assets/BgHomeLaptop.png');
   }
-  background-size: contain; /* Показывает всю картинку */
+  background-size: cover; /* Показывает всю картинку */
   background-repeat: no-repeat; /* Убирает повторение */
   /*background-position: center; !* Центрирует изображение *!*/
 }

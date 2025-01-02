@@ -1,4 +1,3 @@
-import React from 'react';
 import LogoWhite from "../assets/LogoWhite.png"
 import NavBar from "../ui/NavBar";
 import SocialNetwork from "../ui/SocialNetwork";
