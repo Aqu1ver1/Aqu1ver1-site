@@ -16,7 +16,7 @@ const HomePage:FC = () => {
                 <Skills/>
             </section>
             <Avatar/>
-            <section className="flex flex-col justify-between">
+            <section className="flex flex-col items-end justify-between">
                 <Burger/>
                 <div className="flex flex-col gap-12 items-end">
                     <Nav/>

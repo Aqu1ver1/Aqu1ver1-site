@@ -1,12 +1,19 @@
+import {useState} from "react";
+import OpenedBurger from "./Burger/OpenedBurger.tsx";
+import ClosedBurger from "./Burger/ClosedBurger.tsx";
 
 const Burger = () => {
+
+    const [toggled, setToggled] = useState(false);
+
+    const HandleToggled = () => {
+        setToggled(!toggled);
+    }
     return (
-        <nav className="flex flex-col text-end gap-5 text-brand-blue text-2xl">
-            <a href="/html" target="_blank">My resume</a>
-            <a href="/html" target="_blank">My projects</a>
-            <p className="opacity-40">Say Hello</p>
-            <a href="https://t.me/Aqu1ver1" target="_blank">t.me/Aqu1ver1</a>
-        </nav>
+        <div className="flex flex-col gap-4 items-end">
+            <ClosedBurger onClose={HandleToggled}/>
+            { toggled ? <OpenedBurger/> : null }
+        </div>
     );
 };
 
